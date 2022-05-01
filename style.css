@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css2?family=Padauk&family=Ubuntu:wght@700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+.container-main {
+  margin: 0 10%;
+}
+
+/* cabeçalho */
+
+header {
+  padding: 3% 0;
+}
+
+#logo-fidem {
+  width: 10%;
+  height: 5%;
+}
+
+#button-header {
+  border-radius: 5px;
+  padding: 5px;
+  border: none;
+  width: 150px;
+  margin-top: 5px;
+  background-color: white;
+  box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+  color: black;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+#button-header:hover {
+  background-color: rgb(152, 180, 204);
+}
+
+#button-header a:hover {
+  color: black;
+}
+
+#link-header {
+  color: white;
+  margin: 0 25px;
+  font-size: 18px;
+}
+
+#link-header:hover {
+  color: rgb(0, 0, 0);
+}
+
+/* Início */
+
+#home {
+  background: url(bg.png) no-repeat;
+  background-size: 100vw;
+}
+
+#home-2 {
+  display: flex;
+  gap: 15%;
+  padding: 6% 0 25% 0;
+  justify-content: center;
+}
+
+#text-home {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+#text-home h1 {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+  color: white;
+  font-size: 60px;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  padding-left: 10px;
+}
+
+#text-home p {
+  color: white;
+  width: 250px;
+}
+
+#button-home {
+  border-radius: 5px;
+  padding: 5px;
+  border: none;
+  width: 250px;
+  height: 45px;
+  margin-top: 5px;
+  background-color: white;
+  box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+  color: black;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+#button-home:hover {
+  background-color: rgb(152, 180, 204);
+}
+
+#text-and-button {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+
+main {
+  background-color: #f8f7f7;
+}
+
+/* sobre */
+
+#sobre {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 10% 2%;
+  border-bottom: 1px dotted rgb(136, 134, 134);
+}
+
+#texto-sobre {
+  margin-left: 15%;
+  line-height: 30px;
+}
+
+#sobre h2 {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+  color: #05336b;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+#sobre p {
+  font-family: 'Padauk', sans-serif;
+  font-size: 18px;
+  width: 90%;
+}
+
+#sobre img {
+  margin-left: 5%;
+  height: 15rem;
+}
+
+#button-sobre {
+  padding: 2px;
+  margin-top: 2%;
+  cursor: pointer;
+  width: 40%;
+  height: 20%;
+  background-color: #ce2020;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+#button-sobre:hover {
+  background-color: #a81a1a;
+}
+
+/* portfólio */
+
+#portfolio {
+  padding: 10% 0 18% 0;
+}
+
+#portfolio h2 {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+  color: #05336b;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 6%;
+  letter-spacing: 5px;
+}
+
+
+#cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.wrapper {
+  display: flex;
+  width: 70%;
+  justify-content: space-around;
+}
+
+.card {
+  width: 280px;
+  height: 360px;
+  padding: 2rem 1rem;
+  background: #fff;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  box-shadow: 0px 7px 10px rgb(0, 0, 0, 0.5);
+  transition: 0.5s ease-in-out;
+}
+
+.card:hover {
+  transform: translateY(20px);
+}
+
+.card:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, rgba(21, 110, 151, 0.5), rgba(6, 3, 221, 0.726));
+  z-index: 2;
+  transition: 0.5s all;
+  opacity: 1;
+}
+
+.card:hover:before {
+  opacity: 1;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.card .info {
+  position: relative;
+  z-index: 3;
+  color: #fff;
+  opacity: 1;
+  transform: translateY(130px);
+  transition: 0.5s all;
+  cursor: default;
+}
+
+.card:hover .info {
+  opacity: 1;
+  transform: translateY(120px);
+}
+
+.card .info h1 {
+  margin: 0;
+  font-size: 1.8em;
+}
+
+.card .info p {
+  letter-spacing: 1px;
+  font-size: 15px;
+  margin-top: 8px;
+  margin-bottom: 20px;
+  height: 2em;
+}
+
+.card .info .btn {
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  background: #fff;
+  color: #000;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.4s ease-in-out;
+}
+
+.card .info .btn:hover {
+  box-shadow: 0px 7px 10px rgb(0, 0, 0, 0.5);
+  background-color: #c7c7c7;
+}
+
+/* contato */
+
+#contato h2 {
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: bold;
+  color: #05336b;
+  text-transform: uppercase;
+  text-align: center;
+  padding-bottom: 5%;
+  letter-spacing: 5px;
+}
+
+.box {
+  color: rgb(0, 0, 0);
+  transform: translate(-50%, -50%);
+  background-color: rgba(248, 248, 248, 0.212);
+  padding: 15px;
+  border-radius: 10px;
+  width: 50%;
+  margin: 30% 50% 0 50%;
+  border: 1px solid black;
+}
+
+fieldset {
+  border: 3px solid dodgerblue;
+}
+
+.inputBox {
+  position: relative;
+}
+
+.inputUser,
+.oi {
+  background: none;
+  border: none;
+  border-bottom: 1px solid rgb(0, 0, 0);
+  outline: none;
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+  width: 100%;
+  letter-spacing: 2px;
+}
+
+.labelInput {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  pointer-events: none;
+  transition: 0.5s;
+}
+
+.inputUser:focus~.labelInput,
+.inputUser:valid~.labelInput {
+  top: -20px;
+  font-size: 12px;
+  color: #ce2020;
+}
+
+#submit {
+  background-image: linear-gradient(to right, rgb(0, 92, 197), rgb(5, 13, 32));
+  width: 100%;
+  border: none;
+  padding: 15px;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+#submit:hover {
+  background-image: linear-gradient(to right, rgb(7, 60, 121), rgb(7, 12, 44));
+}
+
+/* rodapé */
+footer {
+  background-color: #05336b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  padding: 15px;
+  gap: 30px;
+}
+
+#logo-rodape {
+  width: 4.5em;
+  height: 5em;
+}
+
+#icons-social img {
+  width: 2em;
+  height: 2em;
+  margin: 10px;
+}
+
+#icons-social a {
+  text-decoration: none;
+}
+
+#itens-footer p {
+  font-family: 'Padauk', sans-serif;
+  color: white;
+  margin: 8px;
+}
+
+#itens-footer p a {
+  color: white;
+  font-family: 'Padauk', sans-serif;
+  text-decoration: none;
+}

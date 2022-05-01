@@ -1,0 +1,121 @@
+@media (max-width: 480px) {
+  .container-main {
+    margin: 0;
+  }
+
+  header {
+    padding: 10px;
+  }
+
+  #logo-fidem {
+    width: 45px;
+    height: 50px;
+  }
+
+  .navbar-toggler-icon {
+    background-image: url(menu.png);
+  }
+
+  #button-header {
+    background: none;
+    box-shadow: none;
+    color: #FFF;
+    padding: 0 60px 0 0;
+    font-size: 18px;
+  }
+
+  #button-header:hover {
+    background: none;
+    color: black;
+  }
+
+  #link-header:hover {
+    color: white;
+  }
+
+  #home {
+    background-image: url(bg-mobile.png);
+    background-size: 150% 100%;
+  }
+
+  #home-2 {
+    padding: 10% 0;
+  }
+
+  #text-home h1 {
+    text-align: center;
+    font-size: 2em;
+  }
+
+  #text-home p {
+    width: 280px;
+    margin-left: 8%;
+  }
+
+  #button-home {
+    width: 140px;
+    height: 40px;
+    font-size: 15px;
+    padding: 2px;
+    margin-right: 20px;
+  }
+
+  #sobre {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    padding: 15% 0;
+  }
+
+  #sobre img {
+    height: 12rem;
+    width: 10rem;
+    text-align: center;
+  }
+
+  #sobre h2 {
+    text-align: center;
+    margin-right: 55px;
+    padding-bottom: 10px;
+  }
+
+  #sobre p {
+    padding: 10px;
+  }
+
+  #texto-sobre a {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+    margin-right: 55px;
+  }
+
+  #button-sobre {
+    width: 200px;
+    padding: 5px;
+  }
+
+  #contato {
+    height: 115vh;
+  }
+
+  #contato h2 {
+    padding-top: 2%;
+  }
+
+  .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 90px;
+    width: 70%;
+  }
+
+  .box {
+    margin-top: 60%;
+    width: 80%;
+  }
+
+}
